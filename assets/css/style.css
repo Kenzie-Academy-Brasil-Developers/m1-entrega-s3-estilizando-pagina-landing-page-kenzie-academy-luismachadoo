@@ -37,7 +37,6 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    list-style: none;
 }
 img{
     max-width: 800px;
@@ -60,14 +59,24 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
+h2 {
+    font-family: Montserrat, Lato;
+    font-size: 0.66em;
+}
+a {
+    font-size: 13px;
+}  
 /* GERAL */
-  
+
 /* HTML */
 html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    width: 100vw;
+    height: 100vh;
+}
 /* BODY */
   
 /* HEADER */
@@ -79,10 +88,73 @@ footer{}
 /* FOOTER */
 
 /* INICIAL */
-main{}
-/* INICIAL */
-
-/* EXTRAS */
+main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: border-box;
+}
+.secaoSobre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+}
+img {
+    width: 100%;
+}
+div.flex-col {
+    width: 10rem;
+    padding: 1.5rem;
+    padding-top: 0rem;
+}
+.h2lista {
+    text-align: center;
+    margin-top: -1rem;
+}
+p {
+    font-size: 0.58em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+span {
+    font-size: 0.52em;
+    color: #818181;
+}
+button {
+    width: 112px;
+    background-color: white;
+    border-radius: 0.24rem;
+    border: 0.5px solid #818181;
+    margin-top: 1.5rem;
+    padding: 0.28rem;
+}
+ul {
+    margin-top: 1.5rem;
+}
+li {
+    font-size: 0.55em;
+    color: #818181;
+    line-height: 1.8em;
+}
+.java img {
+    width: 50%;
+}
+figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}
@@ -97,7 +169,9 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) {
+     
+    }
   
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */
