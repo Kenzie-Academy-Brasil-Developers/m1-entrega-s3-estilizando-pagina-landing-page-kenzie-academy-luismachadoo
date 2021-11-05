@@ -39,7 +39,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
 }
 img{
-    max-width: 800px;
+    width: 40%;
 }
 div.flex{
     display: flex;
@@ -61,7 +61,14 @@ div.container{
 }
 h2 {
     font-family: Montserrat, Lato;
-    font-size: 0.66em;
+    font-size: 1.7em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+h3 {
+    color: #303030;
+    font-weight: 500;
+    padding-top: 0.9rem;
 }
 a {
     font-size: 13px;
@@ -98,6 +105,15 @@ main{
     width: 100%;
     background: border-box;
 }
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .secaoSobre {
     display: flex;
     flex-direction: row;
@@ -105,39 +121,56 @@ main{
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 19rem;
+    width: 100%;
 }
-img {
+.imgPython {
     width: 100%;
 }
 div.flex-col {
-    width: 10rem;
+    width: 100%;
     padding: 1.5rem;
-    padding-top: 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 400px;
 }
 .h2lista {
     text-align: center;
     margin-top: -1rem;
+    padding-bottom: 4rem;
 }
 p {
-    font-size: 0.58em;
+    font-size: 1.49em;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 span {
-    font-size: 0.52em;
+    font-size: 1.3em;
     color: #818181;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 2.5rem;
 }
-button {
-    width: 112px;
-    background-color: white;
+.secaoSobre button {
     border-radius: 0.24rem;
     border: 0.5px solid #818181;
     margin-top: 1.5rem;
-    padding: 0.28rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 3.3rem;
+    background-color: white;
+    font-size: 1.4em;
 }
 ul {
     margin-top: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    font-size: 2.21rem;
 }
 li {
     font-size: 0.55em;
@@ -145,9 +178,96 @@ li {
     line-height: 1.8em;
 }
 .java img {
-    width: 50%;
+    width: 40%;
 }
 figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.secaoCursos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 5rem;
+}
+.cursos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.ulcursos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+}
+.ulcursos li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+}
+.ulcursos li p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    text-align: center;
+}
+.flex-col_Lista {
+    width: 100%;
+    padding: 1.5rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+.flex-col_Listaa {
+    width: 100%;
+    padding: 1.5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+.parCourse {
+    padding-bottom: 5rem;
+}
+.liPython {
+    padding-top: 5rem;
+}
+
+footer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -173,5 +293,61 @@ figure {
      
     }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        .secaoSobre h2 {
+            font-size: 22px;
+        }
+        .secaoSobre p {
+            font-size: 19px;
+            padding-top: 4rem;
+        }
+        .secaoCursos h2 {
+            font-size: 19px;
+        }
+        .secaoCursos p {
+            font-size: 15px;
+        }
+        .secaoSobre {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        div.flex-col {
+            width: 50%;
+            padding-left: 0;
+            display: flex;
+            padding-right: 0rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        span {
+            font-size: 0.9em;
+        }
+        .secaoSobre button {
+            width: 19%;
+            font-size: 1.1em;
+        }
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .flex-col_Listaa {
+            width: 50%;
+        }
+        .flex-col_Lista {
+            width: 50%;
+        }
+    }
 /* MEDIA QUERIES */
